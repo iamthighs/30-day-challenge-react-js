@@ -1,31 +1,20 @@
 import ImageCard from "./ImageCard.jsx";
+import profiles from "../data/profiles.js";
 
 export default function ImageCards() {
     return (
-        <div>
-            <h1 className="text-2xl font-bold text-center mt-10">Image Cards</h1>
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 p-4">
-                <ImageCard
-                imageUrl="src/assets/tys.png"
-                title="Sample Image"
-                description="This is a sample description for the image card."
-                />
-                <ImageCard
-                imageUrl="src/assets/tys.png"
-                title="Sample Image"
-                description="This is a sample description for the image card."
-                />
-                <ImageCard
-                imageUrl="src/assets/tys.png"
-                title="Sample Image"
-                description="This is a sample description for the image card."
-                />
-                <ImageCard
-                imageUrl="src/assets/tys.png"
-                title="Sample Image"
-                description="This is a sample description for the image card."
-                />
-            </div>
+        <div className="min-h-screen bg-gray-100 p-10">
+          <h1 className="text-3xl font-bold text-center mb-8">Our Team</h1>
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
+            {profiles.map((profile) => (
+              <ImageCard
+                key={profile.id}
+                name={profile.name}
+                bio={profile.bio}
+                avatar={profile.avatar}
+              />
+            ))}
+          </div>
         </div>
-    );
+      );
 }
