@@ -15,7 +15,7 @@ If you are developing a production application, we recommend using TypeScript wi
 - [x]  Day 1: Setup React with Vite + Tailwind CSS
 - [x]  Day 2: Learn JSX, Components, and File Structure
 - [x]  Day 3: Props, PropTypes / TS Interfaces
-- [ ]  Day 4: State Management with useState
+- [x]  Day 4: State Management with useState
 - [ ]  Day 5: Event Handling & Form Inputs
 - [ ]  Day 6: Lists, Keys, and Conditional Rendering
 - [ ]  Day 7: 🎯 Mini Project – To-Do List
